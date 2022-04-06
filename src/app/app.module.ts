@@ -7,14 +7,18 @@ import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './components/search/search.component'
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { DetailComponent } from './components/detail/detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
     CardComponent,
-    SearchComponent
+    SearchComponent,
+    DetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

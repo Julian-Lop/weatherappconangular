@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { City } from '@app/models/city';
 
@@ -36,15 +36,37 @@ export class WeatherService {
                 icon:"http://openweathermap.org/img/wn/"+response.weather[0].icon+"@2x.png"
               }
               )
-            console.log(this.cities)
           })
-      }
-      console.log('cit--->'+filt)
+      }return filt
   }
 
   deleteCity(name:any){
     let temp = this.cities.filter((e:any) => !e.name.toUpperCase().includes(name.toUpperCase()))
     this.cities = temp
+  }
+
+  getCityDetail(name:any){
+    const cityTemp:any = []
+    this.searchCity(name).subscribe(response => 
+      {
+        cityTemp.push(
+          {
+            coord:response.coord,
+            name:response.name,
+            country:response.sys.country,
+            timezone:response.timezone,
+            tempMin:response.main.temp_min,
+            tempMax:response.main.temp_max,
+            tempAve:response.main.temp,
+            visibility:response.visibility,
+            wind:response.wind.speed,
+            weather:response.weather[0].description,
+            icon:"http://openweathermap.org/img/wn/"+response.weather[0].icon+"@2x.png"
+          }
+          )
+      })
+    
+    return cityTemp
   }
 
 }

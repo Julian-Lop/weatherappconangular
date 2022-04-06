@@ -17,11 +17,16 @@ export class SearchComponent implements OnInit {
   }
 
   onSubmit(){
-    const city = new City()
-    city.name = this.name
+    if(this.name.length>0){
+      const city = {name:''}
+      city.name = this.name
 
-    this.weatherService.addCity(this.name)
-    console.log(this.name)
+      let verificar:any = this.weatherService.addCity(this.name)
+      if(!verificar){
+        alert('ya existe')
+      }
+      this.name = ''
+    }
   }
 
 }
