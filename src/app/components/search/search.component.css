@@ -18,17 +18,31 @@ input.InputSearch{
     padding-left: 5px;
 }
 
-input.InputSubmit{
-    height: 25px;
+button.InputSubmit{
+    height: 30px;
     background: none;
     border: 1px black solid;
-    transition: 0.3s;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-input.InputSubmit:hover{
+button.InputSubmit:hover{
     background: black;
     color: white;
     transition: 0.3s;
+}
+
+button.InputSubmit:disabled{
+    opacity: 0.5;
+    height: 30px;
+    background: none;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button.InputSubmit:disabled:hover{
+    color: #cfcdcd;
+    cursor:auto;
 }

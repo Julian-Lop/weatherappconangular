@@ -1,6 +1,6 @@
 <div>
     <form action="" (ngSubmit)="onSubmit()" >
-        <input type="text" name="name" class="InputSearch" [(ngModel)]="name">
-        <input type="submit" value="Buscar" class="InputSubmit">
+        <input type="text" name="name" class="InputSearch" [(ngModel)]="name" placeholder="Nombre de ciudad..">
+        <button type="submit" class="InputSubmit" [disabled]="name.length > 0 ? false : true" >Buscar <i class="fas fa-search"></i></button>
     </form>
 </div>
