@@ -1,0 +1,11 @@
+nav.Nav{
+    background: #f3f3f3;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav.Nav h1{
+    margin-left: 20px;
+}

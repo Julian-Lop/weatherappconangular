@@ -1,0 +1,18 @@
+<div class="Container">
+    <div class="Title">
+        <h3>Ciudad : </h3><p>{{city.name}}</p>
+    </div>
+    <div class="Img">
+        <img src="{{city.icon}}">
+    </div>
+    <div>
+        <h3>Temperatura min : </h3><p>{{city.tempMin}}</p>
+    </div>
+    <div>
+        <h3>Temperatura max : </h3><p>{{city.tempMax}}</p>
+    </div>
+    <div>
+        <h3>Clima : </h3><p>{{city.weather}}</p>
+    </div>
+    <button (click)="deleteCity()"><i class="fas fa-trash-alt"></i></button>
+</div>
