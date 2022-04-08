@@ -1,10 +1,21 @@
 body{
     margin: 0;
     border: 0;
-    
+    background-image: url("./assets/Images/Main_Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 @keyframes visible {
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+@keyframes invisible {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }

@@ -1,7 +1,9 @@
 div{
     width: 300px;
     height: 80px;
+    margin-left: 10px;
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 form{
@@ -16,6 +18,7 @@ input.InputSearch{
     background: none;
     border: 2px black solid;
     padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button.InputSubmit{
@@ -25,6 +28,7 @@ button.InputSubmit{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button.InputSubmit:hover{
@@ -43,6 +47,6 @@ button.InputSubmit:disabled{
 }
 
 button.InputSubmit:disabled:hover{
-    color: #cfcdcd;
+    color: rgba(1, 1, 1, 0.3);
     cursor:auto;
 }

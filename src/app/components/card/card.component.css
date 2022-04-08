@@ -1,7 +1,6 @@
 div.Container{
     width: 380px;
     height: 380px;
-    background: #f3f3f3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +8,7 @@ div.Container{
     margin: 20px;
     animation: visible;
     animation-duration: 1s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div.Container div{
@@ -19,12 +19,65 @@ div.Container div{
     justify-content: space-between;
 }
 
+div.Container .ContainerRow{
+    width: 95%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.Container .ContainerRow div{
+    width: 30%;
+    height: 100%;
+    /* background: rgb(180, 142, 255); */
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 3px 15px 0.1px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.4s;
+}
+
+div.Container .ContainerRow div:hover{
+    width: 30%;
+    height: 100%;
+    /* background: rgb(180, 142, 255); */
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 1.5px 6px 0.1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.4s;
+}
+
+div.Container .ContainerRow div h4{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
 div.Container div.Title{
     width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3:hover{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    transition: 0.3s;
 }
 
 button{
@@ -52,7 +105,7 @@ div.Img{
 }
 
 div.Img img{
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.03);
     margin-left: 31%;
     border-radius: 10px;
 }
@@ -60,4 +113,102 @@ div.Img img{
 a{
     color: black;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+div.Container .ImageWeather{
+    position: absolute;
+    z-index: -1;
+    width: 380px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    background-image: url('../../../assets/Images/CardBackground.jpg');
+    background-size: cover;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+div.Container .Back{
+    position: absolute;
+    z-index: -2;
+    width: 380px;
+    height: 380px;
+    border-radius: 15px;
+    background: white;
+}
+
+
+.ContainerDisabled{
+    opacity: 0;
+    width: 380px;
+    height: 380px;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+    animation: invisible;
+    animation-duration: 0.5s;
+}
+
+div.ContainerDisabled div{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.ContainerDisabled div.Title{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.ContainerDisabled .ContainerRow{
+    width: 95%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.ContainerDisabled .ContainerRow div{
+    width: 30%;
+    height: 100%;
+    /* background: rgb(180, 142, 255); */
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 3px 15px 0.1px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.4s;
+}
+
+div.ContainerDisabled .ContainerRow div:hover{
+    width: 30%;
+    height: 100%;
+    /* background: rgb(180, 142, 255); */
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 1.5px 6px 0.1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.4s;
+}
+
+div.ContainerDisabled .ContainerRow div h4{
+    font-size: 14px;
+    margin-bottom: 0px;
 }

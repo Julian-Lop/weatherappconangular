@@ -17,7 +17,12 @@ export class CardComponent implements OnInit {
   }
 
   deleteCity(){
-    this.weatherService.deleteCity(this.city.name)
-    this.cardsComponen.chageDetected()
+    let card = document.getElementById(this.city.name)
+    card?.classList.remove('Container')
+    card?.classList.add('ContainerDisabled')
+    setTimeout(() => {
+      this.weatherService.deleteCity(this.city.name)
+      this.cardsComponen.chageDetected()
+    }, 500)
   }
 }

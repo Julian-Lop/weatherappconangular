@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
       city.name = this.name
 
       let verificar:any = this.weatherService.addCity(this.name)
-      if(!verificar){
+      if(!verificar ){
         alert('ya existe')
       }
       this.name = ''

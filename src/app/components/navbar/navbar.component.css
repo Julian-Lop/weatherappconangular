@@ -1,16 +1,25 @@
 nav.Nav{
-    background: #f3f3f3;
+    background: linear-gradient( rgba(31, 31, 31, 0.807)  ,rgba(0, 0, 0, 0.053));
     width: 100%;
     margin: 0;
     display: flex;
     justify-content: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav.Nav h1{
     margin-left: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+nav.Nav h1:hover{
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: white;
+    transition: 0.3s;
 }
 
 a{
-    color: black;
+    color: rgb(222, 222, 255);
     text-decoration: none;
 }

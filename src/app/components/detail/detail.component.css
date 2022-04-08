@@ -1,15 +1,35 @@
 .ContainerDetail{
-    width: 90%;
-    margin: 5%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../../../assets/Images/CardBackground.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    width: 800px;
+    margin-top: 60px;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    animation: visible;
+    animation-duration: 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ContainerDetail div{
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    width: max-content;
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .ContainerDetail h1{
